@@ -15,11 +15,7 @@ export default function List () {
 				<Action_row/>
 				<Delete/>
 			</div>
-		</div>
-		
-
-		
-		
+		</div>	
 	);
 	return(listItems);
 };
