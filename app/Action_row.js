@@ -1,17 +1,13 @@
 "use client"
 import React,{useState} from "react" 
-
 const Action_row=() =>{
 	const [Rating, setRating] = useState (0);
 	const handleLike = () => {
     	setRating(Rating + 1);
   };
-
   	const handleDislike = () => {
   		setRating(Rating - 1);
   };
-  	
-	
 	return(
 		<div className="Action-row">
 			<div className="action_col">
@@ -23,13 +19,9 @@ const Action_row=() =>{
 				</div>
 				<div className="dislike">
 					<button onClick={handleDislike}><img src="Dislike.png"/></button>
-
 				</div>
 				
-			</div>
-				
-
-				
+			</div>	
 		</div>
 	
 	);
