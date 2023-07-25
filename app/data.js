@@ -1,4 +1,4 @@
-export const movie_data = [{
+const Data = [{
 	id:0,
 	name:'Dear Zindagi',
 	year:"2016",
@@ -98,7 +98,7 @@ export const movie_data = [{
 	image:"Movie10.png",
 	Description:"After He Becomes A Quadriplegic From A Paragliding Accident.An Aristocrat Hires A Young Man From The Projects To Be His Caregiver",
 }];
-
+export default Data;
 
 
 

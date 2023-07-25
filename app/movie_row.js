@@ -1,22 +1,31 @@
+
 import Action_row from './Action_row.js'
-import {movie_data} from './data.js'
+import Data from './data.js'
 import Delete from './delete.js'
-export default function List () {
-	const listItems = movie_data.map(file =>
+
+const List= (props) =>{
+	return(
  		<div className="row_movie1">
 			<div className="image_col1">
-				<img src={file.image}/>
+				<img src={props.box.image}/>
 			</div>
 			<div className="detail_col2">
-				<h2>{file.name}</h2>
-				<p>{file.year} | {file.duration} | {file.genre}</p>
+				<h2>{props.box.name}</h2>
+				<p>{props.box.year} | {props.box.duration} | {props.box.genre}</p>
 				<h3>Description</h3>
-				<p>{file.Description}</p>
-				<Action_row/>
-				<Delete/>
+				<p>{props.box.Description}</p>
+				<Action_row {...props}/>
+				<Delete {...props}/>
+
 			</div>
-		</div>	
+		</div>
+
+
+
+
 	);
-	return(listItems);
 };
+export default List;
+
+
 

@@ -1,3 +1,4 @@
+
 const Footer=()=>{
 	return(
 		<div>
@@ -15,5 +16,3 @@ const Footer=()=>{
 	);
 };
 export default Footer;
-
-
